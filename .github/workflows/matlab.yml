@@ -1,1 +1,15 @@
+name: Run MATLAB Tests
 
+on: [push]
+
+jobs:
+  matlab-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run MATLAB script
+        uses: matlab-actions/run-command@v1
+        with:
+          command: run('your_script.m')
