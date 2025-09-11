@@ -12,4 +12,4 @@ jobs:
       - name: Run MATLAB script
         uses: matlab-actions/run-command@v1
         with:
-          command: run('your_script.m')
+          command: run('SCUC.m')
